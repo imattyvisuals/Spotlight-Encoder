@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpotlightWeb</title>
+    <!-- Stylesheet for Development Static Server -->
+    <link rel="stylesheet" href="http://localhost:8900/css/bootstrap.min.css">
+
+    <!-- bootstrap cdn -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- General Stylesheet -->
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <section class="jumbotron text-center mb-3">
+        <div class="container">
+            <h1 class="jumbotron-heading"><b>IMAGE to BASE64</b></h1>
+            <p class="lead text-light">
+                Encode any image into base64 format in 5 seconds and get result immediatetly with SpotlightWeb.
+                You wan to know more about base64? Click the button below to read more.
+            </p>
+            <p>
+                <a href="https://www.base64decode.org" class="btn btn-primary my-2">Read More</a>
+            </p>
+        </div>
+    </section>
+
+    <form>
+        <input id="file" type="file" accept="image/*" />
+        <h3><b>Click to upload Image</b></h3>
+    </form>
+
+    <div class="result">
+        <div class="image">
+
+        </div>
+        <div class="values">
+            <div class="outputs">
+                <div>
+                    <h6>HTML</h6>
+                    <button class="btn btn-primary">Copy</button>
+                </div>
+                <div class="textarea" id="html" rows="1"></div>
+            </div>
+            <div class="outputs">
+                <div>
+                    <h6>CSS</h6>
+                    <button class="btn btn-primary">Copy</button>
+                </div>
+                <div class="textarea" id="css" rows="1"></div>
+            </div>
+            <div class="outputs">
+                <div>
+                    <h6>BASE64</h6>
+                    <button class="btn btn-primary">Copy</button>
+                </div>
+                <div class="textarea" id="base" rows="1"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jquery for Development Static Server -->
+    <script src="http://localhost:8900/js/jquery.min.js"></script>
+
+    <!-- bootstrap cdn js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!-- My js -->
+    <script src="app.js"></script>
+</body>
+
+</html>

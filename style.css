@@ -1,0 +1,79 @@
+:root {
+    --jumbotron-padding-y: 3rem;
+}
+
+body{
+    padding-bottom: 50px;
+}
+
+h1{
+    color:rgb(155, 252, 255);
+}
+
+.jumbotron {
+    padding-top: var(--jumbotron-padding-y);
+    padding-bottom: var(--jumbotron-padding-y);
+    margin-bottom: 0;
+    background-color: rgb(65, 39, 208);
+}
+
+@media (min-width: 768px) {
+    .jumbotron {
+        padding-top: calc(var(--jumbotron-padding-y) * 2);
+        padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+    }
+}
+
+.jumbotron p:last-child {
+    margin-bottom: 0;
+}
+
+.jumbotron-heading,
+h1,
+p {
+    font-weight: 300;
+}
+
+.jumbotron .container {
+    max-width: 40rem;
+}
+
+.card{
+    border: none;
+}
+
+.card-body {
+    text-align: center;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    box-shadow: 0 2px  6px rgba(0, 0, 0, .3);
+}
+
+.btn{
+    border-radius: 7px;
+}
+
+.btn:hover{
+    box-shadow: 0 2px  6px rgba(0, 0, 0, .3);
+}
+
+.display-12{
+    text-transform: uppercase;
+    color:rgb(65, 39, 208);
+}
+
+.myfooter {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(65, 39, 208);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}

@@ -1,0 +1,143 @@
+:root {
+    --jumbotron-padding-y: 3rem;
+}
+
+.jumbotron {
+    padding-top: var(--jumbotron-padding-y);
+    padding-bottom: var(--jumbotron-padding-y);
+    margin-bottom: 0;
+    background-color: rgb(65, 39, 208);
+}
+
+@media (min-width: 768px) {
+    .jumbotron {
+        padding-top: calc(var(--jumbotron-padding-y) * 2);
+        padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+    }
+}
+
+.jumbotron p:last-child {
+    margin-bottom: 0;
+}
+
+.jumbotron-heading,
+h3 {
+    font-weight: 300;
+}
+
+.jumbotron .container {
+    max-width: 40rem;
+}
+
+form {
+    width: 80%;
+    padding: 1%;
+    text-align: center;
+    height: 100px;
+    margin: 50px auto;
+    position: relative;
+    border: 1px solid rgb(47, 170, 252);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form input {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 10;
+}
+
+h1{
+    color:rgb(155, 252, 255);
+}
+
+form h3 {
+    text-transform: uppercase;
+    text-align-last: center;
+    color:rgb(65, 39, 208);
+}
+
+form, .result{
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .2), 0 -1px 6px rgba(0, 0, 0, .2);
+}
+
+.result {
+    border-radius: 10px;
+    border: 1px solid rgb(47, 252, 156);
+    width: 81%;
+    padding: 2%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.result .image {
+    min-width: 300px;
+    min-height: 300px;
+    width: 40%;
+    border-radius: 10px;
+    border: 1px solid grey;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.result .values .outputs div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.result .values {
+    width: 50%;
+    min-height: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.result .values .outputs div button {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.result .values .outputs .textarea{
+    width: 100%;
+    border: 1px solid grey;
+    overflow-x: auto;
+    max-height: 65px;
+}
+
+.result .values .outputs .textarea::-webkit-scrollbar-thumb{
+    background-color: transparent;
+    width: 3px;
+}
+
+@media screen and (max-width: 800px){
+    .result {
+        display: block;
+    }
+
+    .result .image{
+        margin: auto;
+    }
+
+    .result .values{
+        width: 80%;
+        margin: 40px auto;
+    }
+}
+
+@media screen and (max-width: 390px){
+    .result .image {
+        width: 95%;
+        min-width: 95%;
+    }
+}
